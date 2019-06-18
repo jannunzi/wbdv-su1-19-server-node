@@ -1,0 +1,85 @@
+[
+  {
+    "title": "Website 1",
+    "pages": [
+      {
+        "_id": "page1",
+        "title": "Page 1",
+        "rows": [
+          {
+            "_id": "row1",
+            "title": "Row 1",
+            "columns": [
+              {
+                "_id": "column1",
+                "title": "Column 1",
+                "span": 12,
+                "widgets": [
+                  {
+                    "_id": "widget1",
+                    "title": "Widget 1",
+                    "type": "HEADING",
+                    "size": 1,
+                    "text": "Heading 1"
+                  },
+                  {
+                    "_id": "widget2",
+                    "title": "Widget 2",
+                    "type": "HEADING",
+                    "size": 2,
+                    "text": "Heading 2"
+                  },
+                  {
+                    "_id": "widget3",
+                    "title": "Widget 3",
+                    "type": "HEADING",
+                    "size": 3,
+                    "text": "Heading 3"
+                  },
+                  {
+                    "_id": "widget4",
+                    "title": "Widget 4",
+                    "type": "HEADING",
+                    "size": 4,
+                    "text": "Heading 4"
+                  },
+                  {
+                    "_id": "widget5",
+                    "title": "Widget 5",
+                    "type": "HEADING",
+                    "size": 5,
+                    "text": "Heading 5"
+                  },
+                  {
+                    "_id": "widget6",
+                    "title": "Widget 6",
+                    "type": "PARAGRAPH",
+                    "text": "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {"_id": "page2"},
+      {"_id": "page3"}
+    ]
+  },
+  {
+    "title": "Website 2",
+    "pages": [
+      {
+        "_id": "page4",
+        "title": "Page 4"
+      },
+      {
+        "_id": "page5",
+        "title": "Page 5"
+      }
+    ]
+  },
+  {
+    "title": "Website 3"
+  }
+]
