@@ -18,8 +18,14 @@ module.exports = function (app) {
         websiteDao.deleteWebsite(req.params['websiteId'])
             .then(status => res.json(status))
 
+    const updateWebsite = (req, res) =>
+        websiteDao.updateWebsite(req.params['websiteId'], req.body)
+            .then(status => res.json(status))
+
     app.post('/api/websites', createWebsite);
     app.get('/api/websites', findAllWebsites);
     app.get('/api/websites/:websiteId', findWebsiteById);
     app.delete('/api/websites/:websiteId', deleteWebsite);
+    app.put('/api/websites/:websiteId', updateWebsite);
+
 }

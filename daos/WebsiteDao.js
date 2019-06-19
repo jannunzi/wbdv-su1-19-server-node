@@ -18,10 +18,34 @@ const updateWebsite = (websiteId, newWebsite) =>
         {$set: {title: newWebsite.title}
     })
 
+const appendPage = (websiteId, page) =>
+    websiteModel.update(
+        {_id: websiteId},
+        {
+            $push: {
+                pages: page
+            }
+        })
+
+const updatePage = (websiteId, pageId, page) =>
+    websiteModel.update(
+        {
+            _id: websiteId,
+            'pages._id': pageId},
+        {
+            $set: {
+                'pages.$.title': page.title,
+                'pages.$.rows': page.rows
+            }
+        }
+    )
+
 module.exports = {
     createWebsite,
     findAllWebsites,
     findWebsiteById,
     deleteWebsite,
-    updateWebsite
+    updateWebsite,
+    appendPage,
+    updatePage
 };

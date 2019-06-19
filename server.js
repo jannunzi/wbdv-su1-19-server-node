@@ -98,6 +98,7 @@ const authentication = require('./controllers/authentication.controller.server')
 authentication(app)
 
 require('./controllers/WebsiteController')(app)
+require('./controllers/PageController')(app)
 
 
 // require("./controllers/page.controller.server")(app);
